@@ -2,6 +2,12 @@
 
 面向吉他练习的中文和弦对照页。默认范围为 **0–15 品**，支持 12 个根音、23 种和弦构造、CAGED、转位指形、试听与节拍跟练。
 
+**在线练习：[打开和弦地图](https://analalaa.github.io/chord-map/)**
+
+## GitHub Pages 部署
+
+网站通过 `.github/workflows/pages.yml` 自动部署。每次推送到 `main` 分支，GitHub Actions 会先运行和弦及转位测试，通过后把 `dist/` 发布到 GitHub Pages。也可以在 Actions 页面手动运行此流程。
+
 ## 本地使用
 
 需要 Node.js 20 或更新版本，无须安装第三方依赖。
