@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24273d">
+  <meta name="description" content="吉他全指板和弦对照与练习：12个根音、大/小/属和弦、CAGED、构成音、原位与转位指形及节拍跟练。">
+  <title>和弦地图 · 吉他全指板练习</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2324273d'/%3E%3Cpath d='M18 12v40M32 12v40M46 12v40M12 24h40M12 40h40' stroke='%23faf8f2' stroke-width='2'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23ed815f'/%3E%3C/svg%3E">
+  <style>
+:root{--ink:#26283c;--muted:#797b88;--paper:#f7f6f2;--line:#e5e4e0;--white:#fff;--root:#dc795b;--root-soft:#fbebe4;--guide:#7b75ba;--guide-soft:#edebf7;--tone:#566879;--tone-soft:#e9eef1;--radius:16px;font-family:'Noto Sans SC',sans-serif;color:var(--ink);font-synthesis:none;scroll-behavior:smooth;scroll-padding-top:90px}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);font-size:14px;line-height:1.65}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[role=button]:focus-visible{outline:3px solid #9c8fe0;outline-offset:4px}a{color:inherit}button:disabled{cursor:default;opacity:.5}.site-header{height:88px;max-width:1360px;margin:auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;font-size:19px;letter-spacing:1px}.brand small{display:block;font-family:'Space Grotesk',sans-serif;font-size:9px;letter-spacing:2px;font-weight:500;line-height:1.2;color:var(--muted);margin-top:4px}.brand-mark{width:37px;height:42px;border:1px solid var(--ink);border-radius:11px;display:grid;place-items:center;font-family:serif;font-size:32px;line-height:1}.site-header nav{display:flex;gap:30px;font-size:13px;color:#646574}.site-header nav a{text-decoration:none}.site-header nav a:hover{color:var(--root)}.quiet-button{border:0;background:none;color:var(--muted);font-size:12px;padding:8px 0}main{max-width:1264px;padding:0 24px;margin:auto}.intro{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:44px 0 32px}.eyebrow{font-size:11px;letter-spacing:1.4px;color:var(--muted);margin:0 0 10px;font-weight:500}.intro h1{font-size:34px;font-weight:600;letter-spacing:-1.2px;line-height:1.4;margin:0 0 12px}.intro h1 span{color:var(--guide);margin-left:5px}.intro-copy{color:var(--muted);margin:0;font-size:13px}.intro-aside{padding-left:24px;border-left:1px solid var(--line);display:grid;gap:4px;min-width:180px}.intro-aside span,.intro-aside small{font-size:11px;color:var(--muted)}.intro-aside strong{font:500 20px 'Space Grotesk',sans-serif;letter-spacing:5px}.workspace{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 30px #25283e03}.selector-area{padding:24px 28px 20px;border-bottom:1px solid var(--line)}.field-caption{font-size:10px;letter-spacing:1px;color:var(--muted);font-weight:500;display:block;margin-bottom:10px}.root-picker{display:flex;gap:8px;flex-wrap:wrap}.root-picker button{min-width:48px;height:40px;flex:1;max-width:85px;border:1px solid var(--line);background:var(--white);border-radius:7px;font:500 16px 'Space Grotesk',sans-serif;transition:background .15s}.root-picker button[aria-pressed=true]{background:var(--ink);color:var(--white);border-color:var(--ink)}.selector-bottom{display:flex;gap:30px;align-items:end;justify-content:space-between;margin-top:20px}.type-field{display:block;min-width:245px}.type-field select{width:100%}select{border:1px solid var(--line);background:var(--white);padding:9px 32px 9px 11px;border-radius:7px;color:var(--ink);max-width:100%;cursor:pointer}.family-picker{display:flex;gap:6px;flex-wrap:wrap}.family-picker button{border:0;background:transparent;color:var(--muted);padding:8px 12px;border-radius:6px;font-size:12px}.family-picker button[aria-pressed=true]{color:var(--ink);background:#f0efeb}.chord-overview{display:flex;justify-content:space-between;gap:32px;padding:26px 28px 23px}.family-label{font-size:10px;letter-spacing:1.5px;color:var(--guide);font-weight:500}.chord-heading h2{margin:5px 0 8px;display:flex;align-items:baseline;gap:18px}.chord-heading h2 #chord-symbol{font:500 40px 'Space Grotesk',sans-serif;letter-spacing:-2px}.chord-heading h2 #chord-name{font-size:16px;font-weight:500;letter-spacing:0}.chord-heading p{font-size:12px;color:var(--muted);margin:0;max-width:500px}.tone-area{max-width:52%;align-self:center}.tone-chips{display:flex;gap:8px;flex-wrap:wrap}.tone-chip{display:flex;gap:10px;align-items:center;padding:7px 12px;border-radius:8px;background:var(--tone-soft);color:var(--tone);font-family:'Space Grotesk','Noto Sans SC',sans-serif}.tone-chip strong{font-size:17px;font-weight:500}.tone-chip span{font-size:11px;opacity:.8}.tone-chip.root-tone{background:var(--root-soft);color:#ab533d}.tone-chip.guide-tone{background:var(--guide-soft);color:#6860a8}.board-tools,.focus-tools{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 28px;background:#fcfcfa;border-top:1px solid var(--line);flex-wrap:wrap}.focus-tools{border:0;background:var(--white);padding-top:14px;padding-bottom:6px}.control-group{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.tool-label,.check-label{font-size:11px;color:var(--muted)}.check-label{display:flex;align-items:center;gap:6px}.check-label input{accent-color:var(--ink);width:15px;height:15px;margin:0}.segmented{display:flex;border:1px solid var(--line);border-radius:6px;padding:3px;background:var(--white);gap:2px}.segmented button{border:0;background:none;padding:5px 9px;font-size:11px;border-radius:4px;color:var(--muted)}.segmented button[aria-pressed=true]{background:var(--ink);color:white}.control-group select{font-size:11px;padding-top:6px;padding-bottom:6px}.focus-picker{display:flex;gap:5px;flex-wrap:wrap}.focus-picker button{border:0;background:transparent;color:var(--muted);font-size:11px;padding:5px 10px;border-radius:4px}.focus-picker button[aria-pressed=true]{background:var(--guide-soft);color:#665ca4}.board-hint{font-size:10px;color:var(--muted)}.board-container{padding:4px 20px 0}.fretboard-scroll{overflow-x:auto;scrollbar-width:thin;margin-bottom:12px}.fretboard-svg{display:block;width:100%;min-width:760px;user-select:none}.fretboard-svg text{font-family:'Space Grotesk','Noto Sans SC',sans-serif}.fret-label{fill:#91919e;font-size:10px}.string-label{fill:#777985;font-size:10px}.board-string{stroke:#bfc1c7}.board-fret{stroke:#e5e5e9;stroke-width:1}.board-nut{stroke:#81818c;stroke-width:3}.board-inlay{fill:#e5e5e9}.tone-point{cursor:pointer}.tone-point circle{stroke:white;stroke-width:2;transition:opacity .1s}.tone-point:hover circle{stroke:var(--ink);stroke-width:2}.tone-point text{pointer-events:none;text-anchor:middle;fill:#fff;font-size:11px;font-weight:500}.tone-point .degree-text{font-size:8px;fill:#ffffffcb}.tone-point.is-dim{opacity:.15}.tone-point.is-selected circle{stroke:var(--ink);stroke-width:3}.tone-point.is-selected .selection-ring{stroke:var(--root);fill:none;stroke-width:1}.neutral-note{fill:#b4b4bd;font-size:9px;text-anchor:middle;cursor:pointer}.board-caption{font-size:10px;fill:#a0a0aa}.board-footer{display:flex;gap:20px;align-items:center;justify-content:space-between;padding:3px 28px 16px;flex-wrap:wrap}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:10px;color:var(--muted)}.legend span{display:flex;gap:5px;align-items:center}.legend i{width:7px;height:7px;border-radius:50%;display:inline-block}.root-dot{background:var(--root)}.guide-dot{background:var(--guide)}.other-dot{background:var(--tone)}.selected-dot{background:var(--white);border:2px solid var(--ink)}.audio-actions{display:flex;gap:7px}.button{border:1px solid var(--line);border-radius:7px;padding:8px 13px;background:var(--white);font-size:11px;color:var(--ink);transition:background .15s}.button:hover{background:#f0efeb}.button-dark{background:var(--ink);color:white;border-color:var(--ink)}.button-dark:hover{background:#42445c}.status-line{margin:0;padding:0 28px 10px;font-size:11px;color:var(--muted);min-height:24px}.chord-tip{margin:0;padding:12px 28px;border-top:1px solid var(--line);background:#fcfbf7;color:#807b6d;font-size:11px}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:8px}.section-heading h2{margin:0;font-size:21px;letter-spacing:-.4px;font-weight:600}.section-heading .eyebrow{margin-bottom:6px}.section-description{font-size:12px;color:var(--muted);margin:0 0 20px;max-width:850px}.voicing-section,.caged-section,.catalog-section,.practice-section,.notes-section{padding-top:44px;scroll-margin-top:30px}.text-button{border:0;background:transparent;color:var(--guide);font-size:11px}.voicing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.voicing-card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--ink);text-align:center;cursor:pointer;min-width:0}.voicing-card:hover{border-color:#aaa6c7}.voicing-card[aria-pressed=true]{border:2px solid var(--guide);padding:17px;background:#faf9fe}.voicing-card strong{font-size:12px;font-weight:500}.voicing-card .fret-code{font:500 14px 'Space Grotesk',sans-serif;letter-spacing:2px;margin:2px 0}.voicing-card small{font-size:10px;color:var(--muted);line-height:1.6}.mini-chord{width:128px;height:141px;display:block}.mini-chord text{font-family:'Space Grotesk','Noto Sans SC',sans-serif;fill:var(--muted);font-size:10px}.mini-chord .diagram-line{stroke:#d5d5db;stroke-width:1}.mini-chord .diagram-nut{stroke:#78798a;stroke-width:3}.mini-chord .diagram-dot{fill:var(--ink)}.mini-chord .diagram-root{fill:var(--root)}.subtle-tag{font-size:11px;color:var(--muted);padding:5px 10px;border:1px solid var(--line);border-radius:6px;white-space:nowrap}.caged-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.caged-grid .voicing-card{padding:14px 8px}.caged-grid .voicing-card[aria-pressed=true]{padding:13px 7px}.caged-grid .shape-letter{font:500 21px 'Space Grotesk',sans-serif;color:var(--guide)}.catalog-filter{font-size:11px;color:var(--muted);display:flex;gap:9px;align-items:center}.catalog-filter select{font-size:11px}.table-wrap{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left;min-width:710px;font-size:12px}th{font-weight:500;color:var(--muted);font-size:10px;letter-spacing:.8px;background:#fcfcfa;padding:13px 18px;border-bottom:1px solid var(--line)}td{padding:13px 18px;border-bottom:1px solid #efeeeb}tbody tr:last-child td{border:0}tbody tr{cursor:pointer}tbody tr:hover{background:#faf9fd}tbody tr.active-row{background:#f1eff9}td:first-child{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:500;white-space:nowrap}td:nth-child(3),td:nth-child(4){font-family:'Space Grotesk',sans-serif;white-space:nowrap}td:last-child{font-size:11px;color:var(--muted);max-width:310px}.practice-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 0}.practice-tabs button{padding:10px 17px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:12px;border-radius:7px}.practice-tabs button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:white}.practice-body{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;padding:28px;background:var(--white);border:1px solid var(--line);border-radius:12px;margin-top:14px}.practice-body h3{font-size:17px;font-weight:500;margin:0 0 9px}.practice-body p{font-size:12px;color:var(--muted);margin:0 0 16px}.practice-body ol{padding-left:20px;margin:0;font-size:12px}.practice-body li{padding:0 0 13px 6px}.practice-body .practice-goal{border-top:1px solid var(--line);padding-top:14px;margin:6px 0 0;font-size:11px;color:#737082}.practice-console{padding-left:28px;border-left:1px solid var(--line)}.practice-targets{display:flex;gap:6px;flex-wrap:wrap;min-height:45px;margin-bottom:16px}.practice-targets button{padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:white;font:500 13px 'Space Grotesk','Noto Sans SC',sans-serif;color:var(--ink)}.practice-targets button[aria-pressed=true]{background:var(--root-soft);border-color:#e5af9b;color:#a44e34}.practice-navigation{display:flex;gap:8px;margin:0 0 20px}.metronome{display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--line);margin-bottom:12px}.metronome label{font-size:11px;color:var(--muted)}.metronome input{width:54px;padding:6px;border:1px solid var(--line);border-radius:5px;font:500 13px 'Space Grotesk',sans-serif;color:var(--ink)}.metronome button[aria-pressed=true]{background:var(--guide-soft);border-color:var(--guide)}.beat-dots{display:flex;gap:6px}.beat-dots i{width:7px;height:7px;background:#e0dfe6;border-radius:50%;transition:background .1s}.beat-dots i.on{background:var(--root);transform:scale(1.3)}.practice-console>small{display:block;color:var(--muted);font-size:10px;margin-top:14px}.correction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 32px;padding:24px 0}.correction-grid article{border-left:2px solid #d9d4e9;padding-left:17px}.correction-grid h3{font-size:13px;font-weight:500;margin:0 0 7px}.correction-grid p{font-size:11px;color:var(--muted);margin:0;line-height:1.9}.source-details{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;color:var(--muted);font-size:11px}.source-details summary{cursor:pointer;color:var(--ink);font-size:12px}.source-details p{max-width:920px}.source-details a{color:var(--guide)}footer{max-width:1264px;padding:28px 24px 36px;margin:20px auto 0;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}.footer-slash{padding:0 10px;color:#c3c0ce}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:10px 20px;font-size:12px;border-radius:8px;max-width:calc(100vw - 32px);z-index:30;box-shadow:0 4px 20px #0002}.no-voicing{grid-column:1/-1;padding:20px;color:var(--muted);border:1px dashed var(--line);border-radius:10px;font-size:12px}[hidden]{display:none!important}
+@media(min-width:1400px){main{max-width:1312px}.site-header{max-width:1408px}}@media(max-width:900px){.site-header{padding:0 24px}.site-header nav{gap:16px}.intro h1{font-size:29px}.intro-aside{min-width:160px}.root-picker button{min-width:40px}.chord-overview{gap:20px}.tone-area{max-width:50%}.tone-chip{padding:6px 9px;gap:6px}.caged-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.practice-body{gap:24px}.practice-console{padding-left:20px}.board-hint{width:100%}.family-picker button{padding:7px 9px}}
+@media(max-width:640px){:root{scroll-padding-top:20px}.site-header{height:75px;padding:0 18px;gap:14px}.brand{font-size:16px;gap:9px}.brand-mark{width:31px;height:36px;font-size:27px}.brand small{font-size:8px;letter-spacing:1px}.site-header nav{gap:14px;font-size:11px}.site-header .quiet-button{display:none}main{padding:0 15px}.intro{padding:28px 0 24px}.intro h1{font-size:27px;letter-spacing:-.7px}.intro h1 span{display:block;margin:0}.intro-copy{font-size:11px;max-width:280px}.intro-aside{display:none}.eyebrow{font-size:10px;letter-spacing:.6px}.selector-area{padding:20px 17px}.root-picker{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.root-picker button{max-width:none;min-width:0;height:37px;font-size:15px}.selector-bottom{gap:14px;align-items:start;flex-direction:column;margin-top:20px}.type-field{width:100%;min-width:0}.family-picker{gap:2px}.family-picker button{font-size:10px;padding:7px 9px}.chord-overview{padding:20px 17px;flex-direction:column;gap:18px}.chord-heading h2 #chord-symbol{font-size:34px}.chord-heading h2 #chord-name{font-size:14px}.tone-area{max-width:100%;align-self:start}.tone-chip{padding:5px 10px}.board-tools{padding:12px 17px;gap:12px}.control-group{gap:8px}.segmented button{font-size:10px;padding:5px 8px}.focus-tools{padding:13px 12px 3px;gap:8px}.focus-picker{gap:0}.focus-picker button{font-size:10px;padding:5px 8px}.board-hint{padding-left:6px;font-size:9px}.board-container{padding:4px 8px 0}.board-footer{padding:0 17px 13px;gap:13px}.legend{gap:10px;font-size:9px}.status-line{padding:0 17px 10px;font-size:10px}.chord-tip{padding:12px 17px;font-size:10px}.voicing-section,.caged-section,.catalog-section,.practice-section,.notes-section{padding-top:32px}.section-heading h2{font-size:19px}.section-heading{align-items:start}.section-description{font-size:11px;line-height:1.8}.voicing-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.voicing-card{padding:13px 7px}.voicing-card[aria-pressed=true]{padding:12px 6px}.voicing-card strong{font-size:11px}.voicing-card small{font-size:9px}.voicing-card .fret-code{font-size:12px;letter-spacing:1px}.caged-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.catalog-section .section-heading{flex-direction:column;gap:12px}.catalog-filter{font-size:10px}.practice-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.practice-tabs button{font-size:11px;padding:10px}.practice-body{grid-template-columns:1fr;padding:20px;gap:20px}.practice-console{border:0;border-top:1px solid var(--line);padding:20px 0 0}.practice-body ol{font-size:11px}.correction-grid{grid-template-columns:1fr;gap:22px}.subtle-tag{font-size:9px;padding:5px 7px}.text-button{font-size:10px;text-align:right}.audio-actions .button{font-size:10px}.source-details{font-size:10px}footer{padding:25px 18px;flex-direction:column;gap:8px;font-size:9px}}
+@media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+@media print{body{background:white;font-size:10px}.site-header nav,.quiet-button,.intro-aside,.selector-area,.board-tools,.focus-tools,.audio-actions,.practice-section,.caged-section,.source-details,.toast,footer,.text-button{display:none!important}.site-header{height:65px;padding:0;border:0}main{padding:0;max-width:none}.intro{padding:10px 0 20px}.intro h1{font-size:24px}.intro h1 span{display:inline}.workspace{box-shadow:none;break-inside:avoid}.chord-overview{padding:18px}.board-container{padding:0}.fretboard-scroll{overflow:visible}.fretboard-svg{min-width:0;width:100%}.board-footer{padding:5px 18px}.voicing-section,.catalog-section,.notes-section{padding-top:25px}.voicing-grid{grid-template-columns:repeat(3,1fr)}.voicing-card{break-inside:avoid}.table-wrap{overflow:visible}table{min-width:0;font-size:9px}th,td{padding:7px}td:first-child{font-size:12px}.correction-grid{gap:15px;grid-template-columns:1fr 1fr}.section-description{font-size:10px}tr{break-inside:avoid}a{text-decoration:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.fretboard-svg{min-width:1120px}.tone-point .degree-text{font-size:10px}.practice-navigation{flex-wrap:wrap}.practice-dock{background:#f8f6fc;border-top:1px solid var(--line);padding:16px 28px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.practice-dock .field-caption{margin-bottom:7px}.dock-targets,.dock-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.dock-targets button{font:500 12px 'Space Grotesk','Noto Sans SC',sans-serif;border:1px solid #dcd8e9;background:white;padding:5px 10px;border-radius:5px;color:var(--ink)}.dock-targets button[aria-pressed=true]{background:var(--guide);border-color:var(--guide);color:white}.dock-actions .button{font-size:10px}.dock-actions .check-label{margin:0 4px}.dock-actions .text-button{font-size:10px}@media(max-width:640px){.practice-dock{padding:15px 17px;gap:13px}.dock-actions{gap:7px}.dock-actions .check-label{font-size:10px}.practice-dock .field-caption{font-size:9px}}@media print{.fretboard-svg{min-width:0}.practice-dock{display:none!important}}
+/* Inversion comparison: groups stay visible together; bass is independent of root. */
+.inversion-section{padding-top:44px;scroll-margin-top:30px}.inversion-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(275px,1fr));gap:16px;align-items:start}.inversion-group{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px 13px;min-width:0}.inversion-group-heading{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap}.inversion-group-heading h3{font-size:14px;font-weight:500;margin:0}.inversion-group-heading>span{font-size:10px;color:var(--muted)}.inversion-group-heading b{font-family:'Space Grotesk','Noto Sans SC',sans-serif;color:var(--ink);font-weight:500}.inversion-group>p{font-size:10px;color:var(--muted);margin:7px 0 14px;line-height:1.8;min-height:36px}.inversion-shapes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.inversion-card{padding:12px 4px;border-color:#eceaef;border-radius:8px;gap:5px}.inversion-card[aria-pressed=true]{padding:11px 3px}.inversion-card .mini-chord{width:120px;height:132px;max-width:100%}.inversion-card strong.inversion-symbol{font:500 19px 'Space Grotesk','Noto Sans SC',sans-serif;overflow-wrap:anywhere}.inversion-card .fret-code{font-size:11px;letter-spacing:.5px}.inversion-card small{font-size:9px}.inversion-sequence{font-size:9px;color:#696575;line-height:1.7;overflow-wrap:anywhere}.inversion-more{display:block;margin:13px auto 0;font-size:10px}.inversion-empty{grid-column:1/-1;padding:25px 8px;color:var(--muted);font-size:11px;line-height:1.9}.inversion-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:14px 18px;background:#eeedf5;border-radius:9px;margin:18px 0}.inversion-toolbar>p{font-size:11px;color:#6c657f;margin:0;line-height:1.8}.inversion-actions{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.inversion-actions .button{font-size:10px;padding:7px 11px}.inversion-actions .text-button{font-size:10px}.inversion-note{font-size:11px;color:var(--muted);margin:15px 0 0;max-width:920px;line-height:1.9}.mini-chord .diagram-bass-ring{stroke:var(--ink);stroke-width:1.5;fill:none}.tone-point .bass-ring{stroke:var(--ink);stroke-width:1.7;stroke-dasharray:3 2;fill:none}.inversion-dock{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;background:#f8f5ef;border-top:1px solid var(--line);padding:16px 28px}.inversion-dock .field-caption{margin-bottom:6px}.inversion-dock strong{font:500 20px 'Space Grotesk','Noto Sans SC',sans-serif}.inversion-dock strong>span{font:400 11px 'Noto Sans SC',sans-serif;margin-left:8px;color:var(--muted)}
+@media(max-width:900px){.inversion-groups{grid-template-columns:repeat(2,minmax(0,1fr))}.inversion-card .mini-chord{width:110px;height:122px}.inversion-group{padding:16px 11px}}
+@media(max-width:640px){.site-header nav{display:grid;grid-template-columns:repeat(2,max-content);gap:3px 13px;font-size:10px}.inversion-section{padding-top:32px}.inversion-groups{grid-template-columns:1fr;gap:13px}.inversion-group{padding:17px 14px}.inversion-group>p{min-height:0;font-size:11px}.inversion-group-heading>span{font-size:11px}.inversion-card{padding:12px 7px}.inversion-card[aria-pressed=true]{padding:11px 6px}.inversion-card .mini-chord{width:128px;height:141px}.inversion-card .fret-code{font-size:12px}.inversion-card small,.inversion-sequence{font-size:10px}.inversion-toolbar{padding:14px;gap:12px}.inversion-actions{gap:8px}.inversion-note{font-size:10px}.inversion-dock{padding:15px 17px}.inversion-dock .field-caption{font-size:9px}.inversion-dock strong{font-size:19px}.inversion-dock strong>span{display:block;margin:5px 0 0;font-size:10px}}
+@media print{.inversion-section{padding-top:24px}.inversion-groups{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.inversion-group{break-inside:avoid;padding:12px}.inversion-toolbar,.inversion-dock,.inversion-more{display:none!important}.inversion-card .mini-chord{width:110px;height:122px}.inversion-card{padding:8px 4px}.inversion-group>p{min-height:0}.inversion-note{font-size:9px}.inversion-card small,.inversion-sequence{font-size:8px}}
+
+.inversion-bass{font-size:10px;color:var(--guide);line-height:1.6}.inversion-card .inversion-sequence{max-width:100%}
+@media(max-width:380px){.site-header{padding:0 15px;gap:10px}.site-header .brand{font-size:15px;letter-spacing:.4px;gap:7px;flex-shrink:0}.site-header .brand-mark{width:28px;height:33px}.site-header .brand small{font-size:7px;letter-spacing:.8px}.site-header nav{gap:3px 10px;font-size:10px;flex-shrink:0}}
+
+</style>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="#top" aria-label="和弦地图首页"><span class="brand-mark" aria-hidden="true">♮</span><span>和弦地图<small>FRETBOARD STUDY</small></span></a><nav aria-label="页面导航"><a href="#fretboard">全指板</a><a href="#inversions">转位指形</a><a href="#catalog">和弦对照</a><a href="#practice">跟着练</a></nav><button id="print" class="quiet-button" type="button">打印当前对照</button></header>
+  <main id="top">
+    <section class="intro"><div><p class="eyebrow">从一个熟悉的和弦，走向整张指板</p><h1>看懂每个音，<span>连起每个把位。</span></h1><p class="intro-copy">先练 0–15 品：12 品起音名与指型规律重复，音高提高一个八度。</p></div><div class="intro-aside"><span>标准调弦</span><strong>E A D G B E</strong><small>6 弦 → 1 弦 · 先练 0–15 品</small></div></section>
+    <section id="fretboard" class="workspace" aria-label="全指板和弦对照">
+      <div class="selector-area"><div class="selector-group"><span class="field-caption">01 / 选择根音</span><div id="root-picker" class="root-picker" role="group" aria-label="选择根音"></div></div><div class="selector-bottom"><label class="type-field"><span class="field-caption">02 / 选择和弦性质</span><select id="chord-type" aria-label="和弦性质"></select></label><div id="family-picker" class="family-picker" role="group" aria-label="和弦家族"></div></div></div>
+      <div class="chord-overview"><div class="chord-heading"><span id="family-label" class="family-label"></span><h2><span id="chord-symbol">C</span><span id="chord-name">大三和弦</span></h2><p id="chord-description"></p></div><div class="tone-area"><span class="field-caption">构成音 / 相对于和弦根音</span><div id="tone-chips" class="tone-chips"></div></div></div>
+      <div id="practice-dock" class="practice-dock" hidden></div>
+      <div id="inversion-dock" class="inversion-dock" hidden></div>
+      <div class="board-tools"><div class="control-group"><span class="tool-label">显示</span><div class="segmented" id="label-mode"><button type="button" data-label="both" aria-pressed="true">音名＋度数</button><button type="button" data-label="degree" aria-pressed="false">度数</button><button type="button" data-label="note" aria-pressed="false">音名</button></div></div><div class="control-group"><label for="board-range" class="tool-label">品位</label><select id="board-range"><option value="practice">练习范围 0–15 品</option><option value="low">基础范围 0–12 品</option><option value="full">完整参考 0–24 品</option></select><label class="check-label"><input id="show-all" type="checkbox">其余音名</label></div></div>
+      <div class="focus-tools"><div id="focus-picker" class="focus-picker" role="group" aria-label="聚焦音程"><button type="button" data-focus="all" aria-pressed="true">全部构成音</button><button type="button" data-focus="root" aria-pressed="false">只找根音</button><button type="button" data-focus="guide" aria-pressed="false">三音与七音</button></div><span class="board-hint">1 弦在上 · 点击音符试听 · 窄屏可左右滑动</span></div>
+      <div id="board-container" class="board-container"></div>
+      <div class="board-footer"><div class="legend"><span><i class="root-dot"></i>根音</span><span><i class="guide-dot"></i>三音 / 七音</span><span><i class="other-dot"></i>其余构成音</span><span id="selected-legend" hidden><i class="selected-dot"></i>当前按法</span></div><div class="audio-actions"><button id="play-chord" type="button" class="button button-dark">▶ 齐奏试听</button><button id="play-arp" type="button" class="button">分解试听</button></div></div>
+      <p id="board-status" class="status-line" aria-live="polite"></p><p id="chord-tip" class="chord-tip"></p>
+    </section>
+    <section class="voicing-section" aria-labelledby="voicing-title"><div class="section-heading"><div><p class="eyebrow">从所有音，到一个可弹的排列</p><h2 id="voicing-title">把它按出来</h2></div><button id="clear-voicing" class="text-button" type="button" hidden>返回全指板构成音</button></div><p class="section-description">先选一个按法。小图底部 6→1 是弦号，侧边数字是起始品位；卡片下方序列是各弦品位。× 不弹，○ 空弦。</p><div id="voicing-grid" class="voicing-grid"></div></section>
+    <section id="inversions" class="inversion-section" aria-labelledby="inversion-title">
+      <div class="section-heading"><div><p class="eyebrow">同一个和弦，换一个最低音</p><h2 id="inversion-title">转位指形对照</h2></div><span id="inversion-current" class="subtle-tag">C · 三种低音</span></div>
+      <p class="section-description">转位由实际最低音决定。同一转位可以出现在不同弦组和把位；先弹圈出的最低音，再齐奏。橙色表示根音，深色外圈表示本次按法的最低音。按法可依手型调整，保持标出的发声音即可。</p>
+      <div class="inversion-toolbar"><p id="inversion-selection" aria-live="polite">选一个按法，比较低音改变后的声音。</p><div class="inversion-actions"><button id="inversion-previous" class="button" type="button">← 上一转位</button><button id="inversion-next" class="button button-dark" type="button">下一转位 →</button><button id="inversion-play" class="button" type="button">▶ 试听当前按法</button><button id="inversion-show-board" class="text-button" type="button">到主指板查看 ↑</button></div></div>
+      <div id="inversion-groups" class="inversion-groups"></div>
+      <p id="inversion-note" class="inversion-note"></p>
+    </section>
+    <section class="caged-section" aria-labelledby="caged-title"><div class="section-heading"><div><p class="eyebrow">同一个大三和弦，五个相连的形状</p><h2 id="caged-title">CAGED 把位地图</h2></div><span id="caged-current" class="subtle-tag">C 大三和弦</span></div><p class="section-description">C、A、G、E、D 是指型名称。这里按实际品位从低到高排列，起点会随根音变化；五种形状都放在 0–15 品内。完整图用于认路，也可以只弹其中三四根弦。</p><div id="caged-grid" class="caged-grid"></div></section>
+    <section id="catalog" class="catalog-section" aria-labelledby="catalog-title"><div class="section-heading"><div><p class="eyebrow">大 · 小 · 属 / 同根音横向比较</p><h2 id="catalog-title">和弦家族对照表</h2></div><label class="catalog-filter">查看家族<select id="catalog-family"><option value="all">全部家族</option><option value="major">大和弦家族</option><option value="minor">小和弦家族</option><option value="dominant">属和弦家族</option><option value="other">挂留与附加音</option></select></label></div><p class="section-description">点击任意一行，即可在上方指板中查看。这里列出理论完整音集；实际按法会明确标出省略的音。</p><div class="table-wrap"><table><thead><tr><th scope="col">和弦</th><th scope="col">性质</th><th scope="col">音程公式</th><th scope="col">构成音</th><th scope="col">练习时听什么</th></tr></thead><tbody id="chord-table"></tbody></table></div></section>
+      <section id="practice" class="practice-section" aria-labelledby="practice-title"><div class="section-heading"><div><p class="eyebrow">每天 20 分钟 / 听 · 找 · 弹 · 用</p><h2 id="practice-title">拿起吉他，跟着练</h2></div><span class="subtle-tag">先慢，再连贯</span></div><div id="practice-tabs" class="practice-tabs" role="group" aria-label="选择练习"></div><div class="practice-body"><div><h3 id="practice-name"></h3><p id="practice-subtitle"></p><ol id="practice-steps"></ol><p id="practice-goal" class="practice-goal"></p></div><div class="practice-console"><span class="field-caption">当前练习和弦</span><div id="practice-targets" class="practice-targets"></div><div class="practice-navigation"><button id="previous-target" class="button" type="button">← 上一个</button><button id="next-target" class="button button-dark" type="button">下一个 →</button><button id="go-practice-board" class="button" type="button">到指板跟练 ↑</button></div><div class="metronome"><label>速度 <input id="bpm" type="number" min="40" max="180" value="60" inputmode="numeric"> BPM</label><button id="metronome-button" class="button" type="button" aria-pressed="false">开启节拍器</button><div class="beat-dots" id="beat-dots" aria-label="四拍节奏"><i></i><i></i><i></i><i></i></div></div><label class="check-label"><input id="auto-next" type="checkbox">每 4 拍自动切换和弦</label><small>合成音仅帮助听辨。跟练时，请在自己的吉他上弹奏。</small></div></div></section>
+    <section class="notes-section" aria-labelledby="notes-title"><div class="section-heading"><div><p class="eyebrow">读笔记时，一起记住这些区别</p><h2 id="notes-title">原理小抄</h2></div></div><div id="correction-grid" class="correction-grid"></div><details class="source-details"><summary>内容来源与阅读说明</summary><div id="source-list"></div><p>本页将原笔记重组为练习工具，并修正部分构造与记号表述。和弦构成音图展示音的位置，不能把全部亮点同时当作一只手的按法。标准调弦下，一品等于一个半音；指板按均匀间距绘制，便于对照。</p></details></section>
+  </main>
+  <footer><span>和弦地图 <span class="footer-slash">/</span> 让每个按法都有来由。</span><span>12 个根音 · 23 种构造 · 一张指板</span></footer>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script type="module">
+/** Standard tuning, from string 6 (low E) to string 1 (high E). */
+export const TUNING = Object.freeze([40, 45, 50, 55, 59, 64]);
+export const ROOTS = Object.freeze([
+  { pc: 0, label: 'C' }, { pc: 1, label: 'D♭' }, { pc: 2, label: 'D' },
+  { pc: 3, label: 'E♭' }, { pc: 4, label: 'E' }, { pc: 5, label: 'F' },
+  { pc: 6, label: 'F♯' }, { pc: 7, label: 'G' }, { pc: 8, label: 'A♭' },
+  { pc: 9, label: 'A' }, { pc: 10, label: 'B♭' }, { pc: 11, label: 'B' }
+]);
+
+const definition = (id, name, suffix, family, intervals, degrees, description, tip) =>
+  Object.freeze({ id, name, suffix, family, intervals: Object.freeze(intervals), degrees: Object.freeze(degrees), description, tip });
+
+/** These are theoretical pitch collections, not a demand to play every note. */
+export const CHORDS = Object.freeze([
+  definition('major', '大三和弦', '', 'major', [0,4,7], ['1','3','5'], '根音、大三度与纯五度组成的基础和弦。', '先找到根音与三音。把三音降低半音，便得到同根音小三和弦。'),
+  definition('maj7', '大七和弦', 'maj7', 'major', [0,4,7,11], ['1','3','5','7'], '在大三和弦上加入大七度。', 'maj7 的七音与根音相差一个半音的音级距离；留意音区与旋律。'),
+  definition('maj9', '大九和弦', 'maj9', 'major', [0,4,7,11,14], ['1','3','5','7','9'], '大七和弦加入自然九音。', '区别 add9：maj9 的结构包含大七音。练习按法可以省去五音。'),
+  definition('maj11', '大十一和弦', 'maj11', 'major', [0,4,7,11,14,17], ['1','3','5','7','9','11'], '大七体系加入自然十一音；完整理论结构也包括九音。', '自然11与大三音可能产生强摩擦。这里保留3与11作对照，不把它误记成sus；可比较maj7(#11)。'),
+  definition('maj13', '大十三和弦', 'maj13', 'major', [0,4,7,11,14,17,21], ['1','3','5','7','9','11','13'], '大七体系延伸到自然十三音。', '完整理论结构有七种音；吉他练习排列保留1、3、7、13，并明确省略5、9、11。'),
+  definition('maj7#11', '大七升十一', 'maj7(#11)', 'major', [0,4,7,11,18], ['1','3','5','7','♯11'], '大七和弦加入升十一音。', '升高的是11而非根音；Cmaj7(#11) 中的升十一音为F♯。'),
+  definition('maj13#11', '大十三升十一', 'maj13(#11)', 'major', [0,4,7,11,14,18,21], ['1','3','5','7','9','♯11','13'], '大十三体系采用升十一音。', '练习排列保留1、3、7、♯11、13，通常省略5与9；不是所有音都必须同时弹出。'),
+  definition('minor', '小三和弦', 'm', 'minor', [0,3,7], ['1','♭3','5'], '根音、小三度与纯五度组成。', '与同根音大三和弦比较，只改变三音：3降低半音成为♭3。'),
+  definition('m7', '小七和弦', 'm7', 'minor', [0,3,7,10], ['1','♭3','5','♭7'], '小三和弦加入小七度。', '与属七和弦比较：两者都有♭7，三音分别是♭3与3。'),
+  definition('m9', '小九和弦', 'm9', 'minor', [0,3,7,10,14], ['1','♭3','5','♭7','9'], '小七和弦加入自然九音。', '先听m7，再只加入9；练习排列常省略五音。'),
+  definition('m11', '小十一和弦', 'm11', 'minor', [0,3,7,10,14,17], ['1','♭3','5','♭7','9','11'], '小七体系加入自然十一音。', '先抓住♭3、♭7、11；练习排列可以省略5与9。'),
+  definition('m13', '小十三和弦', 'm13', 'minor', [0,3,7,10,14,17,21], ['1','♭3','5','♭7','9','11','13'], '小七体系延伸到自然十三音（大六度）。', '13能否使用取决于调式、旋律与排列；例如部分Dorian语境可用。不能把它当成普遍禁音。'),
+  definition('7', '属七和弦', '7', 'dominant', [0,4,7,10], ['1','3','5','♭7'], '大三和弦加入小七度，三音与七音之间形成三全音。', '属七是和弦性质，不保证它在每首歌中都承担V7功能。先练G7→C，听B→C与F→E。'),
+  definition('9', '属九和弦', '9', 'dominant', [0,4,7,10,14], ['1','3','5','♭7','9'], '属七和弦加入自然九音。', '单独写9通常包含♭7；与maj9以及add9区别开。'),
+  definition('11', '属十一和弦', '11', 'dominant', [0,4,7,10,14,17], ['1','3','5','♭7','9','11'], '属七体系延伸到自然十一音。', '3与11可能摩擦；此处给保留两者的色彩排列。若把3替换为4，应另写7sus4或9sus4。'),
+  definition('13', '属十三和弦', '13', 'dominant', [0,4,7,10,14,17,21], ['1','3','5','♭7','9','11','13'], '属七体系延伸到自然十三音。', '常用排列保留1、3、♭7、13；5、9、11可省略。连接小和弦时，♭9或♭13是可选张力而非必需。'),
+  definition('6', '大六和弦', '6', 'other', [0,4,7,9], ['1','3','5','6'], '大三和弦加入自然六音，不包含七音。', 'C6的音集合为C–E–G–A，与Am7/C相同；Am/C少了G，不能直接等同。'),
+  definition('m6', '小六和弦', 'm6', 'other', [0,3,7,9], ['1','♭3','5','6'], '小三和弦加入大六度。', 'm6中的6通常是自然6，不是♭6；与m7比较，只把♭7降低半音至6。'),
+  definition('6/9', '六九和弦', '6/9', 'other', [0,4,7,9,14], ['1','3','5','6','9'], '大三和弦加入六音和九音，不包含七音。', '6/9并不是maj13的同义词；七音的有无是重要区别。'),
+  definition('sus2', '挂二和弦', 'sus2', 'other', [0,2,7], ['1','2','5'], '用二音替代三音。', '没有3或♭3，因此不能只凭它确定大小性质；比较sus2→大三。'),
+  definition('sus4', '挂四和弦', 'sus4', 'other', [0,5,7], ['1','4','5'], '用四音替代三音。', '先唱4→3，再弹sus4→大三，听同一根音下的变化。'),
+  definition('add9', '加九和弦', 'add9', 'other', [0,4,7,14], ['1','3','5','9'], '保留大三和弦的三音，再加入九音；不含七音。', 'Csus2没有E，Cadd9保留E；C9还包含B♭，三者不能混用。'),
+  definition('7sus4', '属七挂四', '7sus4', 'other', [0,5,7,10], ['1','4','5','♭7'], '用四音替换属七和弦的三音，保留小七音。', '可试G7sus4→G7→C，听4→3，再听属解决；此处不会偷偷加入三音。')
+]);
+
+const LETTERS = ['C','D','E','F','G','A','B'];
+const NATURAL = [0,2,4,5,7,9,11];
+const ROOT_LETTERS = [0,1,1,2,2,3,3,4,5,5,6,6];
+const ALIASES = { maj: 'major', min: 'minor', min7: 'm7', dom7: '7', six: '6' };
+const mod = n => ((n % 12) + 12) % 12;
+
+function checkRoot(rootPc) {
+  if (!Number.isInteger(rootPc) || rootPc < 0 || rootPc > 11) throw new RangeError('根音应为0至11的音级编号。');
+}
+
+function spelling(rootPc, interval, degree) {
+  const number = Number(degree.replace(/[^0-9]/g, ''));
+  const letter = (ROOT_LETTERS[rootPc] + number - 1) % 7;
+  let alteration = mod(rootPc + interval - NATURAL[letter]);
+  if (alteration > 6) alteration -= 12;
+  return LETTERS[letter] + (alteration < 0 ? '♭'.repeat(-alteration) : '♯'.repeat(alteration));
+}
+
+export function getChord(rootPc, chordId) {
+  checkRoot(rootPc);
+  const id = ALIASES[chordId] || chordId;
+  const chord = CHORDS.find(item => item.id === id);
+  if (!chord) throw new RangeError(`未知和弦类型：${chordId}`);
+  return {
+    ...chord,
+    symbol: ROOTS[rootPc].label + chord.suffix,
+    tones: chord.intervals.map((interval, index) => ({
+      pc: mod(rootPc + interval), name: spelling(rootPc, interval, chord.degrees[index]),
+      degree: chord.degrees[index], interval
+    }))
+  };
+}
+
+/*
+ * Reviewed C-root templates. -1 means mute, 0 means open. All six positions are
+ * present, ordered low E → high E. Extended templates deliberately keep their
+ * third and seventh and the named top extension. Missing theoretical tones are
+ * computed below and displayed rather than silently renamed.
+ */
+const TEMPLATES = {
+  major: [[-1,3,2,0,1,0],[-1,3,5,5,5,3],[8,10,10,9,8,8]],
+  minor: [[-1,3,5,5,4,3],[8,10,10,8,8,8]],
+  maj7: [[-1,3,2,0,0,0],[-1,3,5,4,5,3],[8,-1,9,9,8,-1]],
+  maj9: [[-1,3,2,4,3,-1],[8,7,9,7,-1,-1]],
+  maj11: [[-1,3,3,4,5,-1],[8,8,9,9,-1,-1]],
+  maj13: [[-1,3,-1,4,5,5],[8,-1,9,9,10,-1]],
+  'maj7#11': [[-1,3,4,4,5,-1],[8,-1,9,9,7,-1]],
+  'maj13#11': [[-1,3,4,4,5,5],[8,9,9,9,10,-1]],
+  m7: [[-1,3,5,3,4,3],[8,-1,8,8,8,-1]],
+  m9: [[-1,3,1,3,3,-1],[8,6,8,7,-1,-1]],
+  m11: [[-1,3,3,3,4,-1],[8,8,8,8,-1,-1]],
+  m13: [[-1,3,-1,3,4,5],[8,-1,8,8,10,-1]],
+  '7': [[-1,3,2,3,1,0],[-1,3,5,3,5,3],[8,-1,8,9,8,-1]],
+  '9': [[-1,3,2,3,3,-1],[8,7,8,7,-1,-1]],
+  '11': [[-1,3,3,3,5,-1],[8,8,8,9,-1,-1]],
+  '13': [[-1,3,-1,3,5,5],[8,-1,8,9,10,-1]],
+  '6': [[-1,3,2,2,1,3],[8,-1,7,9,8,-1]],
+  m6: [[-1,3,1,2,1,3],[8,-1,7,8,8,-1]],
+  '6/9': [[-1,3,2,2,3,3],[8,7,7,7,-1,-1]],
+  sus2: [[-1,3,5,5,3,3],[-1,3,0,0,1,3]],
+  sus4: [[-1,3,5,5,6,3],[8,10,10,10,8,8]],
+  add9: [[-1,3,2,0,3,0],[8,-1,10,9,8,10]],
+  '7sus4': [[-1,3,3,3,1,1],[8,10,8,10,8,8]]
+};
+
+function moved(template, amount, reduceOctave = true) {
+  let frets = template.map(fret => fret < 0 ? -1 : fret + amount);
+  if (reduceOctave) {
+    while (Math.min(...frets.filter(fret => fret >= 0)) >= 12) {
+      frets = frets.map(fret => fret < 0 ? -1 : fret - 12);
+    }
+  }
+  return frets;
+}
+
+export function getVoicings(rootPc, chordId) {
+  const chord = getChord(rootPc, chordId);
+  const seen = new Set();
+  return TEMPLATES[chord.id].map((template, index) => {
+    const frets = moved(template, rootPc);
+    const present = new Set(frets.flatMap((fret, string) => fret < 0 ? [] : [mod(TUNING[string] + fret)]));
+    const minFret = Math.min(...frets.filter(fret => fret > 0));
+    const maxFret = Math.max(...frets);
+    const firstString = frets.findIndex(fret => fret >= 0);
+    const bassPc = mod(TUNING[firstString] + frets[firstString]);
+    const bass = chord.tones.find(tone => tone.pc === bassPc)?.name || ROOTS[bassPc].label;
+    const omitted = chord.tones.filter(tone => !present.has(tone.pc)).map(tone => tone.degree);
+    return {
+      frets,
+      label: frets.includes(0) ? '开放弦排列' : `第${minFret}品附近`,
+      omitted, bass, minFret: Number.isFinite(minFret) ? minFret : 0, maxFret,
+      rootString: 6 - firstString,
+      ...(chord.id === 'major' ? { caged: ['C','A','E'][index] } : {})
+    };
+  }).filter(voicing => {
+    const key = voicing.frets.join(',');
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+const CAGED_C = [
+  { shape: 'C', frets: [-1,3,2,0,1,0] },
+  { shape: 'A', frets: [-1,3,5,5,5,3] },
+  { shape: 'G', frets: [8,7,5,5,5,8] },
+  { shape: 'E', frets: [8,10,10,9,8,8] },
+  { shape: 'D', frets: [-1,-1,10,12,13,12] }
+];
+
+export function getCaged(rootPc) {
+  checkRoot(rootPc);
+  return CAGED_C.map(({ shape, frets }) => {
+    // Use the lowest complete occurrence of each shape in the practice window.
+    const position = moved(frets, rootPc, true);
+    return { shape, frets: position, minFret: Math.min(...position.filter(fret => fret >= 0)), maxFret: Math.max(...position) };
+  }).sort((a, b) => a.minFret - b.minFret || a.maxFret - b.maxFret);
+}
+
+
+// A voicing is classified by its lowest sounding MIDI pitch, never by the
+// first string in a diagram. Names of inversions refer to the tertian skeleton.
+const invCache = new Map();
+const invBasicTypes = new Set(['major', 'minor', 'maj7', 'm7', '7']);
+
+function invGroupDefinitions(chord) {
+  const hasThird = chord.degrees.includes('3') || chord.degrees.includes('♭3');
+  return chord.tones.filter(tone => {
+    if (['1', '3', '♭3', '5', '7', '♭7'].includes(tone.degree)) return true;
+    return !hasThird || ['6', 'm6', '6/9', 'add9'].includes(chord.id);
+  }).map(tone => {
+    let id = `degree-${tone.degree}`;
+    let name = `${tone.degree}音低音排列`;
+    if (tone.degree === '1') { id = 'root'; name = '原位'; }
+    else if (hasThird && ['3', '♭3'].includes(tone.degree)) { id = 'third'; name = '第一转位'; }
+    else if (hasThird && tone.degree === '5') { id = 'fifth'; name = '第二转位'; }
+    else if (hasThird && ['7', '♭7'].includes(tone.degree)) { id = 'seventh'; name = '第三转位'; }
+    const degreeName = tone.degree === '1' ? '根音' : `${tone.degree}音`;
+    let description = `${degreeName} ${tone.name} 作为实际最低音，和弦根音仍为 ${chord.tones[0].name}。`;
+    if (chord.tones.length > 4) description += '转位按三／七和弦骨架命名，延伸音的取舍见各按法的省略标记。';
+    if (!hasThird) description += '挂留结构以低音音名标注，不套用含三音和弦的转位编号。';
+    return { id, name, bassDegree: tone.degree, bassName: tone.name, description, tone };
+  });
+}
+
+function invRequiredDegrees(chord, bassDegree) {
+  // Complete basic triads and seventh chords. For extended chords preserve the
+  // root, quality, seventh and named extension; a fifth in the bass is retained.
+  if (invBasicTypes.has(chord.id) || chord.tones.length <= 4) return chord.degrees;
+  const required = new Set(['1', bassDegree]);
+  for (const degree of ['3', '♭3', '7', '♭7']) if (chord.degrees.includes(degree)) required.add(degree);
+  required.add(chord.degrees.at(-1));
+  if (chord.degrees.includes('♯11')) required.add('♯11');
+  if (chord.id === '6/9') required.add('6');
+  return [...required];
+}
+
+function invFingerPlan(frets) {
+  const pressed = frets.flatMap((fret, string) => fret > 0 ? [{ fret, string }] : []);
+  if (!pressed.length) return { fingers: 0, barres: [] };
+  const wholeMask = (1 << pressed.length) - 1;
+  const options = pressed.map((point, index) => ({ mask: 1 << index, barre: null }));
+  for (const fret of new Set(pressed.map(point => point.fret))) {
+    const atFret = pressed.filter(point => point.fret === fret);
+    for (let a = 0; a < atFret.length; a++) for (let b = a + 1; b < atFret.length; b++) {
+      const first = atFret[a].string, last = atFret[b].string;
+      // The barre cannot cover a ringing open string or a lower pressed fret.
+      if (frets.slice(first, last + 1).some(value => value >= 0 && value < fret)) continue;
+      let mask = 0;
+      pressed.forEach((point, index) => { if (point.fret === fret && point.string >= first && point.string <= last) mask |= 1 << index; });
+      options.push({ mask, barre: { fret, fromString: 6 - first, toString: 6 - last } });
+    }
+  }
+  const best = new Map();
+  function solve(mask) {
+    if (mask === wholeMask) return { fingers: 0, barres: [] };
+    if (best.has(mask)) return best.get(mask);
+    const first = pressed.findIndex((_, index) => !(mask & (1 << index)));
+    let answer = { fingers: 99, barres: [] };
+    for (const option of options) {
+      if (!(option.mask & (1 << first))) continue;
+      const remaining = solve(mask | option.mask);
+      const candidate = { fingers: 1 + remaining.fingers, barres: option.barre ? [option.barre, ...remaining.barres] : remaining.barres };
+      if (candidate.fingers < answer.fingers || (candidate.fingers === answer.fingers && candidate.barres.length < answer.barres.length)) answer = candidate;
+    }
+    best.set(mask, answer);
+    return answer;
+  }
+  return solve(0);
+}
+
+function invStringSets(requiredCount) {
+  const sets = [];
+  // Start with consecutive string groups, adding a single muted inner string
+  // when this makes a compact shell or five/six-tone extension practical.
+  for (let length = Math.max(3, requiredCount); length <= 6; length++) {
+    for (let start = 0; start + length <= 6; start++) sets.push(Array.from({ length }, (_, index) => start + index));
+    if (length < 6) for (let start = 0; start + length + 1 <= 6; start++) {
+      for (let skip = start + 1; skip < start + length; skip++) sets.push(Array.from({ length: length + 1 }, (_, index) => start + index).filter(string => string !== skip));
+    }
+  }
+  return sets;
+}
+
+function invCandidates(chord, group) {
+  const required = invRequiredDegrees(chord, group.bassDegree);
+  const requiredPcs = required.map(degree => chord.tones.find(tone => tone.degree === degree).pc);
+  const toneForPc = new Map(chord.tones.map(tone => [tone.pc, tone]));
+  const found = new Map();
+  const targetCount = required.length;
+  const sets = invStringSets(targetCount);
+  const allowedOnString = TUNING.map((open, string) => Array.from({ length: 16 }, (_, fret) => ({ fret, midi: open + fret, string })).filter(note => toneForPc.has(note.midi % 12)));
+
+  for (const strings of sets) for (let windowStart = 0; windowStart <= 12; windowStart++) {
+    const windowEnd = Math.min(15, windowStart + 4);
+    const choices = strings.map(string => allowedOnString[string].filter(note => note.fret >= windowStart && note.fret <= windowEnd || note.fret === 0 && windowStart <= 4));
+    if (choices.some(notes => notes.length === 0)) continue;
+    const frets = [-1,-1,-1,-1,-1,-1];
+    const picked = [];
+    function visit(index, coverage) {
+      if (index === strings.length) {
+        if (!requiredPcs.every(pc => coverage.has(pc))) return;
+        const lowest = picked.reduce((a,b) => a.midi <= b.midi ? a : b);
+        if (lowest.midi % 12 !== group.tone.pc) return;
+        const key = frets.join(',');
+        if (found.has(key)) return;
+        const positive = frets.filter(fret => fret > 0);
+        const minFret = positive.length ? Math.min(...positive) : 0;
+        const maxFret = Math.max(...frets);
+        if (positive.length && maxFret - minFret > 4) return;
+        const fingerPlan = invFingerPlan(frets);
+        if (fingerPlan.fingers > 4) return;
+        const notes = picked.map(note => ({
+          string: 6 - note.string, stringIndex: note.string, fret: note.fret, midi: note.midi,
+          name: toneForPc.get(note.midi % 12).name, degree: toneForPc.get(note.midi % 12).degree
+        })).sort((a,b) => a.midi - b.midi || a.stringIndex - b.stringIndex);
+        const omitted = chord.tones.filter(tone => !coverage.has(tone.pc)).map(tone => tone.degree);
+        const stringLabel = `${6 - strings[0]}–${6 - strings.at(-1)}弦`;
+        const label = `${stringLabel} · ${frets.includes(0) ? '含开放弦' : `${minFret}–${maxFret}品`}`;
+        const symbol = group.bassDegree === '1' ? chord.symbol : `${chord.symbol}/${group.bassName}`;
+        const span = positive.length ? maxFret - minFret : 0;
+        const gaps = strings.at(-1) - strings[0] + 1 - strings.length;
+        const score = (strings.length - targetCount) * 8 + span * 2.8 + fingerPlan.fingers * 1.4 + gaps * 7 + minFret * .13 + omitted.length * 1.2 + fingerPlan.barres.length * .15;
+        found.set(key, { frets: [...frets], label, omitted, bass: group.bassName, symbol, inversion: group.name, minFret, maxFret, notes, fingers: fingerPlan.fingers, barres: fingerPlan.barres, score, stringSet: strings.join(',') });
+        return;
+      }
+      const remaining = strings.length - index;
+      const missing = requiredPcs.filter(pc => !coverage.has(pc));
+      if (missing.length > remaining) return;
+      for (const note of choices[index]) {
+        // Once the target bass is lower than the others, no still lower note
+        // of another pitch class can become part of this inversion.
+        if (note.midi % 12 !== group.tone.pc && picked.some(p => p.midi % 12 === group.tone.pc && note.midi < p.midi)) continue;
+        frets[note.string] = note.fret;
+        picked.push(note);
+        visit(index + 1, new Set([...coverage, note.midi % 12]));
+        picked.pop();
+        frets[note.string] = -1;
+      }
+    }
+    visit(0, new Set());
+  }
+  return [...found.values()].sort((a,b) => a.score - b.score || a.minFret - b.minFret || a.frets.join(',').localeCompare(b.frets.join(',')));
+}
+
+function invChooseVoicings(candidates) {
+  if (candidates.length <= 3) return candidates;
+  const chosen = [candidates[0]];
+  // A second string group makes the same inversion visible across the neck.
+  const alternateStrings = candidates.find(candidate => candidate.stringSet !== chosen[0].stringSet);
+  if (alternateStrings) chosen.push(alternateStrings);
+  const alternatePosition = candidates.find(candidate => !chosen.includes(candidate) && chosen.every(existing => Math.abs(candidate.minFret - existing.minFret) >= 3));
+  if (alternatePosition) chosen.push(alternatePosition);
+  for (const candidate of candidates) {
+    if (chosen.length === 3) break;
+    if (!chosen.includes(candidate)) chosen.push(candidate);
+  }
+  return chosen;
+}
+
+export function getInversionGroups(rootPc, chordId) {
+  const chord = getChord(rootPc, chordId);
+  const key = `${rootPc}:${chord.id}`;
+  if (invCache.has(key)) return invCache.get(key);
+  const groups = invGroupDefinitions(chord).map(group => {
+    const voicings = invChooseVoicings(invCandidates(chord, group));
+    const { tone, ...publicGroup } = group;
+    return { ...publicGroup, description: voicings.length ? group.description : `${group.description}在0–15品与四指限制下，暂不推荐完整保留必要音的紧凑按法；请先练其他低音排列。`, voicings: voicings.map(({ score, stringSet, ...voicing }) => voicing) };
+  });
+  invCache.set(key, groups);
+  return groups;
+}
+
+// Original practice material based on the linked note and the theory references below.
+// Target `type` values match the canonical CHORDS ids in music.js.
+export const PRACTICES = [
+  {
+    id: 'compare',
+    title: '改变一个音，听懂和弦性质',
+    subtitle: '先固定 C 根音，把指型和三音、七音联系起来。',
+    minutes: 5,
+    goal: '能指出变化的音，并说出它是三音还是七音。',
+    steps: [
+      '先弹 C，再弹 Cm。逐个弹出构成音，找到 E 降为 E♭ 的位置；其余音尽量保持相同。',
+      '比较 Cmaj7 与 C7，听 B→B♭；再比较 C7 与 Cm7，听 E→E♭。每组先齐奏，再分解弹并跟唱变化音。',
+      '录下这几组对照，回听时先说出变化的音和和弦性质，再查看指板核对。熟悉后把同一练习移到 D 根音。'
+    ],
+    targets: [
+      { root: 0, type: 'major', label: 'C · 大三' },
+      { root: 0, type: 'minor', label: 'Cm · 小三' },
+      { root: 0, type: 'maj7', label: 'Cmaj7 · 大七' },
+      { root: 0, type: 'm7', label: 'Cm7 · 小七' },
+      { root: 0, type: '7', label: 'C7 · 属七' }
+    ]
+  },
+  {
+    id: 'caged',
+    title: '沿 CAGED 找到同一个和弦',
+    subtitle: '五个区域都是 C 大和弦，先找根音，再找三音和五音。',
+    minutes: 5,
+    goal: '在两个相邻区域找到 C、E、G，并解释它们如何重叠。',
+    steps: [
+      '从 C 型区域开始，找出每个 C 根音，再逐个弹出附近的 E 和 G，边弹边说 1、3、5。',
+      '依次查看 A、G、E、D 型区域。先只弹容易按的三根弦，比较相邻区域共享的音和位置。',
+      '选两个相邻区域交替弹 C 和弦，保持均匀节拍。随后换一个根音，重新找根音定位，核对构成音。'
+    ],
+    targets: [
+      { root: 0, type: 'major', shape: 'C', label: 'C 型区域' },
+      { root: 0, type: 'major', shape: 'A', label: 'A 型区域' },
+      { root: 0, type: 'major', shape: 'G', label: 'G 型区域' },
+      { root: 0, type: 'major', shape: 'E', label: 'E 型区域' },
+      { root: 0, type: 'major', shape: 'D', label: 'D 型区域' }
+    ]
+  },
+  {
+    id: 'connection',
+    title: '让和弦之间的音平稳移动',
+    subtitle: 'Dm7 → G7 → Cmaj7：用三音与七音听见连接。',
+    minutes: 5,
+    tempo: 60,
+    beatsPerChord: 4,
+    goal: '每和弦四拍，连续四轮保持节奏，并听见至少一条声部线。',
+    steps: [
+      '先找到各和弦的三音与七音：Dm7 是 F、C；G7 是 B、F；Cmaj7 是 E、B。逐对弹奏并跟唱。',
+      '选相近把位，按 F–C → F–B → E–B 的音对练习：先保留 F、把 C 降为 B；再保留 B、把 F 降为 E。',
+      '加入根音或使用完整练习按法，在 60 BPM 下每个和弦弹四拍。连续四轮后回听，检查换和弦时是否掉拍。'
+    ],
+    targets: [
+      { root: 2, type: 'm7', label: 'Dm7 · ii7', frets: [-1,5,3,5,-1,-1] },
+      { root: 7, type: '7', label: 'G7 · V7', frets: [3,-1,3,4,-1,-1] },
+      { root: 0, type: 'maj7', label: 'Cmaj7 · Imaj7', frets: [-1,3,2,4,-1,-1] }
+    ]
+  },
+  {
+    id: 'extensions',
+    title: '分清 sus2、add9 与 maj9',
+    subtitle: '同样出现 D，是否保留 E 和 B，会改变和弦名称与声音。',
+    minutes: 5,
+    goal: '能通过构成音解释这三个名字，而不依赖背图。',
+    steps: [
+      '从 C 的 C–E–G 出发，用 D 替换 E，得到 Csus2：C–D–G。弹前先确认三音 E 已被替换。',
+      '回到 C，保留 E 并加入 D，得到 Cadd9：C–E–G–D。交替弹 Csus2 与 Cadd9，单独听 E 带来的区别。',
+      '在 Cadd9 中再加入大七音 B，得到 Cmaj9。先分解唱出各音，再在一段熟悉旋律下比较，选择适合的版本。'
+    ],
+    targets: [
+      { root: 0, type: 'major', label: 'C · 起点' },
+      { root: 0, type: 'sus2', label: 'Csus2 · 用 2 替换 3' },
+      { root: 0, type: 'add9', label: 'Cadd9 · 保留 3，加入 9' },
+      { root: 0, type: 'maj9', label: 'Cmaj9 · 再加入大七音' }
+    ]
+  }
+];
+
+export const CORRECTIONS = [
+  {
+    title: 'sus2、add9、9 是不同结构',
+    text: 'Csus2＝C–D–G；Cadd9＝C–E–G–D；C9＝C–E–G–B♭–D。分别检查三音是否保留、七音是否存在；2 与 9 对应同一音级，不代表这些和弦相同。'
+  },
+  {
+    title: 'C6 的音集合对应 Am7/C',
+    text: 'C6＝C–E–G–A，与 Am7/C 的音集合相同；Am/C 只有 C–E–A。相同音集合在不同低音和进行中，也可能承担不同作用。'
+  },
+  {
+    title: '自然 11 与 13 需要结合语境',
+    text: '大和弦中的自然 11 可能与三音产生明显摩擦；小和弦的自然 13 要结合调式、旋律和排列判断。它们不是所有风格中的禁用音。升高十一音应明确写成 Cmaj7(#11) 等形式。'
+  },
+  {
+    title: '完整构成、实际按法与调内级数要分清',
+    text: '9、11、13 和弦的实际按法常省略部分音；对照实际发声与省略标记来练。构成音的 1、3、5 相对该和弦根音；进行中的 I、ii、V 则相对调的主音。'
+  }
+];
+
+export const SOURCE_NOTES = [
+  {
+    title: '和弦笔记（一）大、小、属家族',
+    url: 'https://scns251qkxyc.feishu.cn/wiki/IPIiwXLbAiJmcmkWf8Sc5pxBnje',
+    note: '原笔记以 CAGED 组织吉他和弦，比较大、小、属家族的构造与延伸音，并强调排列会改变声音。本页将其整理为可移调的指板对照，并补充练习步骤与概念修正。'
+  },
+  {
+    title: 'Open Music Theory · Chord Symbols',
+    url: 'https://viva.pressbooks.pub/openmusictheorycopy/chapter/chord-symbols/',
+    note: '用于核对和弦符号、构成音、延伸音及斜线低音的记法。'
+  },
+  {
+    title: 'Fender · Sus Chords',
+    url: 'https://www.fender.com/articles/chords/the-sus-piciously-easy-way-to-liven-up-basic-chords',
+    note: '用于核对 sus2、sus4 以二音或四音替换三音的基本构造。'
+  },
+  {
+    title: 'The Chord Scale Theory & Jazz Harmony · 出版社节选',
+    url: 'https://content.alfred.com/catpages/01-ADV11216.pdf',
+    note: '用于补充可用张力与回避音的语境；自然 13 的取舍需要结合调式与具体音乐。'
+  }
+];
+
+
+
+
+const $ = id => document.getElementById(id);
+const families = {all:'全部',major:'大和弦',minor:'小和弦',dominant:'属和弦',other:'挂留 / 附加'};
+const familyLabels = {major:'MAJOR FAMILY / 大和弦家族',minor:'MINOR FAMILY / 小和弦家族',dominant:'DOMINANT FAMILY / 属和弦家族',other:'SUSPENDED & ADDED / 挂留与附加音'};
+const state = {root:0,type:'major',family:'all',label:'both',range:'practice',showAll:false,focus:'all',selected:null,practice:0,target:0,practiceActive:false};
+let chord, voicings, caged, inversionGroups=[], audio, metroTimer, beat=0, started=false, toastTimer;
+let playing=[];
+let inversionExpanded=new Set();
+try {
+  const currentSaved=localStorage.getItem('fretboard-study-v2');
+  const saved=JSON.parse(currentSaved||localStorage.getItem('fretboard-study-v1')||'null');
+  if(saved && Number.isInteger(saved.root) && saved.root>=0 && saved.root<12) state.root=saved.root;
+  if(saved && CHORDS.some(c=>c.id===saved.type)) state.type=saved.type;
+  if(saved && ['both','degree','note'].includes(saved.label)) state.label=saved.label;
+  if(currentSaved && saved && ['practice','low','full'].includes(saved.range)) state.range=saved.range;
+} catch {}
+function remember(){try{localStorage.setItem('fretboard-study-v2',JSON.stringify({root:state.root,type:state.type,label:state.label,range:state.range}));}catch{}}
+function toast(text){$('toast').textContent=text;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,3000);}
+function isGuide(degree){return ['3','♭3','7','♭7'].includes(degree);}
+function color(degree){return degree==='1'?'#dc795b':isGuide(degree)?'#7b75ba':'#566879';}
+function noteAt(midi){return ROOTS[((midi%12)+12)%12].label;}
+function focusTone(tone){return state.focus==='all'||(state.focus==='root'&&tone.degree==='1')||(state.focus==='guide'&&isGuide(tone.degree));}
+function fretCode(frets){return frets.map(f=>f<0?'×':f).join(' ');}
+function soundingNotes(frets){return frets.flatMap((f,s)=>f<0?[]:[{string:s,fret:f,midi:TUNING[s]+f,name:chord.tones.find(t=>t.pc===(TUNING[s]+f)%12)?.name||noteAt(TUNING[s]+f)}]).sort((a,b)=>a.midi-b.midi||a.string-b.string);}
+function minimumMidi(frets){return Math.min(...frets.flatMap((f,s)=>f<0?[]:[TUNING[s]+f]));}
+function esc(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function setSelection(root,type,selection=null,fromPractice=false){
+  if(!fromPractice&&state.practiceActive){stopMetronome();state.practiceActive=false;}
+  if(root!==state.root||type!==state.type)inversionExpanded=new Set();
+  state.root=root;state.type=type;state.selected=selection;
+  if(state.family!=='all'&&getChord(root,type).family!==state.family)state.family='all';
+  render();remember();
+}
+
+function renderControls(){
+  $('root-picker').innerHTML=ROOTS.map(r=>`<button type="button" data-root="${r.pc}" aria-pressed="${r.pc===state.root}">${r.label}</button>`).join('');
+  $('family-picker').innerHTML=Object.entries(families).map(([key,label])=>`<button type="button" data-family="${key}" aria-pressed="${state.family===key}">${label}</button>`).join('');
+  const available=CHORDS.filter(c=>state.family==='all'||c.family===state.family);
+  $('chord-type').innerHTML=available.map(c=>`<option value="${c.id}">${ROOTS[state.root].label}${c.suffix} · ${c.name}</option>`).join('');
+  $('chord-type').value=state.type;
+  $('board-range').value=state.range;$('show-all').checked=state.showAll;
+  document.querySelectorAll('[data-label]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.label===state.label)));
+  document.querySelectorAll('[data-focus]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.focus===state.focus)));
+}
+function renderOverview(){
+  $('family-label').textContent=familyLabels[chord.family];$('chord-symbol').textContent=state.selected?.symbol||chord.symbol;$('chord-name').textContent=state.selected?.inversion?`${chord.name} · ${state.selected.inversion}`:chord.name;
+  $('chord-description').textContent=chord.description;$('chord-tip').textContent=chord.tip;
+  $('tone-chips').innerHTML=chord.tones.map(t=>`<span class="tone-chip ${t.degree==='1'?'root-tone':isGuide(t.degree)?'guide-tone':''}"><strong>${t.name}</strong><span>${t.degree} 音</span></span>`).join('');
+}
+
+function boardSVG(start,end){
+  const width=1120,height=282,left=79,right=24,top=49,bottom=247,count=end-start+1;
+  const cell=(width-left-right)/count;
+  const x=f=>left+(f-start+.5)*cell;
+  const y=s=>top+(5-s)*(bottom-top)/5;
+  const selected=state.selected?.frets;
+  const bassMidi=selected?minimumMidi(selected):null;
+  let out=`<svg class="fretboard-svg" viewBox="0 0 ${width} ${height}" role="group" aria-label="${chord.symbol}，第${start}至${end}品，1弦在上6弦在下"><title>${chord.symbol} 全指板构成音，第${start}至${end}品</title>`;
+  out+=`<text x="10" y="20" class="board-caption">${start}–${end} 品</text>`;
+  for(let f=start;f<=end;f++){
+    out+=`<text x="${x(f)}" y="22" text-anchor="middle" class="fret-label">${f===0?'0 / 空弦':f}</text>`;
+    if(f!==end){const line=x(f)+cell/2;out+=`<line x1="${line}" y1="${top-10}" x2="${line}" y2="${bottom+10}" class="${f===0?'board-nut':'board-fret'}"/>`;}
+    if([3,5,7,9,15,17,19,21].includes(f))out+=`<circle cx="${x(f)}" cy="${bottom+24}" r="2.6" class="board-inlay"/>`;
+    if([12,24].includes(f))out+=`<circle cx="${x(f)-5}" cy="${bottom+24}" r="2.6" class="board-inlay"/><circle cx="${x(f)+5}" cy="${bottom+24}" r="2.6" class="board-inlay"/>`;
+  }
+  for(let s=5;s>=0;s--){
+    out+=`<text x="8" y="${y(s)+4}" class="string-label">${6-s}弦 ${['E','A','D','G','B','e'][s]}</text><line x1="${left}" y1="${y(s)}" x2="${width-right}" y2="${y(s)}" stroke-width="${.65+(5-s)*.21}" class="board-string"/>`;
+  }
+  for(let s=5;s>=0;s--)for(let f=start;f<=end;f++){
+    const midi=TUNING[s]+f,pc=midi%12,tone=chord.tones.find(t=>t.pc===pc),isSelected=selected?.[s]===f,isBass=isSelected&&state.selected?.source==='inversion'&&midi===bassMidi;
+    if(tone){
+      const dim=!focusTone(tone)||Boolean(selected&&!isSelected);
+      const noteLabel=`${6-s}弦${f}品，${tone.name}，${tone.degree}音${isBass?'，当前最低音':''}`;
+      out+=`<g class="tone-point${dim?' is-dim':''}${isSelected?' is-selected':''}" role="button" tabindex="0" data-midi="${midi}" aria-label="${noteLabel}"><circle cx="${x(f)}" cy="${y(s)}" r="${state.label==='both'?17:14.5}" fill="${color(tone.degree)}"/>`;
+      if(isSelected)out+=`<circle class="selection-ring" cx="${x(f)}" cy="${y(s)}" r="21"/>`;
+      if(isBass)out+=`<circle class="bass-ring" cx="${x(f)}" cy="${y(s)}" r="24"/>`;
+      if(state.label==='both')out+=`<text x="${x(f)}" y="${y(s)-1}">${tone.name}</text><text x="${x(f)}" y="${y(s)+10}" class="degree-text">${tone.degree}</text>`;
+      else out+=`<text x="${x(f)}" y="${y(s)+4}">${state.label==='note'?tone.name:tone.degree}</text>`;
+      out+='</g>';
+    }else if(state.showAll){out+=`<text x="${x(f)}" y="${y(s)+3}" class="neutral-note" role="button" tabindex="0" data-midi="${midi}" aria-label="${6-s}弦${f}品，${noteAt(midi)}，非当前和弦音">${noteAt(midi)}</text>`;}
+  }
+  return out+'</svg>';
+}
+function renderBoards(){
+  const ranges=state.range==='full'?[[0,12],[12,24]]:state.range==='low'?[[0,12]]:[[0,15]];
+  const previous=[...$('board-container').children].map(el=>el.scrollLeft);
+  $('board-container').innerHTML=ranges.map(([start,end])=>`<div class="fretboard-scroll">${boardSVG(start,end)}</div>`).join('');
+  [...$('board-container').children].forEach((el,i)=>{
+    const [start,end]=ranges[i],frets=state.selected?.frets.filter(f=>f>=start&&f<=end);
+    if(frets?.length){const middle=(Math.min(...frets)+Math.max(...frets))/2;const scale=el.scrollWidth/1120;el.scrollLeft=Math.min(...frets)<=start+2?0:(79+(middle-start+.5)*(1120-79-24)/(end-start+1))*scale-el.clientWidth/2;}
+    else el.scrollLeft=previous[i]||0;
+  });
+  $('selected-legend').hidden=!state.selected;$('clear-voicing').hidden=!state.selected;
+  if(state.selected){
+    const omitted=state.selected.omitted?.length?`；省略 ${state.selected.omitted.join('、')} 音`:'；包含全部构成音';
+    const inversionLabel=state.selected.inversion?`${state.selected.symbol} · ${state.selected.inversion} · 最低音 ${state.selected.bass}；`:'';
+    $('board-status').textContent=`${inversionLabel}当前按法：${fretCode(state.selected.frets)}${omitted}。深色外圈标记实际要弹的位置${state.selected.source==='inversion'?'，双圈标记最低音':''}，其余亮点只是可选位置。`;
+  }else $('board-status').textContent=`当前显示 ${chord.symbol} 的全部构成音位置。先找到 ${ROOTS[state.root].label} 根音，再找三音与七音；这些亮点不是一只手要同时按下的指法。`;
+  renderInversionDock();
+}
+
+function miniSVG(frets,showBass=false){
+  const positive=frets.filter(f=>f>0),max=Math.max(...positive,0),base=max<=4?1:Math.min(...positive),rows=Math.max(4,max-base+1),rowH=Math.min(22,92/rows),x=s=>27+s*15,top=30;
+  const bassMidi=showBass?minimumMidi(frets):null;
+  let svg=`<svg class="mini-chord" viewBox="0 0 128 141" role="img" aria-label="六弦到一弦品位：${fretCode(frets)}"><title>${fretCode(frets)}</title>`;
+  if(base>1)svg+=`<text x="4" y="${top+rowH*.65}">${base}</text>`;
+  for(let s=0;s<6;s++)svg+=`<line class="diagram-line" x1="${x(s)}" y1="${top}" x2="${x(s)}" y2="${top+rows*rowH}"/><text x="${x(s)}" y="16" text-anchor="middle">${frets[s]<0?'×':frets[s]===0?'○':''}</text><text x="${x(s)}" y="136" text-anchor="middle">${6-s}</text>`;
+  for(let r=0;r<=rows;r++)svg+=`<line class="${r===0&&base===1?'diagram-nut':'diagram-line'}" x1="27" y1="${top+r*rowH}" x2="102" y2="${top+r*rowH}"/>`;
+  frets.forEach((f,s)=>{if(f>0)svg+=`<circle cx="${x(s)}" cy="${top+(f-base+.5)*rowH}" r="5.4" class="${(TUNING[s]+f)%12===state.root?'diagram-root':'diagram-dot'}"/>`;if(showBass&&f>=0&&TUNING[s]+f===bassMidi)svg+=`<circle cx="${x(s)}" cy="${f===0?12:top+(f-base+.5)*rowH}" r="8" class="diagram-bass-ring"/>`;});
+  return svg+'</svg>';
+}
+function renderVoicings(){
+  $('voicing-grid').innerHTML=voicings.length?voicings.map((v,i)=>`<button class="voicing-card" type="button" data-voicing="${i}" aria-pressed="${state.selected?.source==='voicing'&&state.selected.index===i}"><strong>${esc(v.label)}${v.caged?' · '+v.caged+' 型':''}</strong>${miniSVG(v.frets)}<span class="fret-code">${fretCode(v.frets)}</span><small>${v.omitted.length?'省略 '+v.omitted.join('、')+' 音':'完整构成音'} · 最低音 ${v.bass}</small></button>`).join(''):'<div class="no-voicing">这个结构先以全指板构成音进行找音练习。</div>';
+}
+function inversionCard(group,groupIndex,v,index){
+  const active=state.selected?.source==='inversion'&&state.selected.groupId===group.id&&state.selected.index===index;
+  const noteSequence=soundingNotes(v.frets).map(n=>n.name).join(' – ');
+  return `<button class="voicing-card inversion-card" type="button" data-inversion-group="${groupIndex}" data-inversion-voice="${index}" aria-pressed="${active}" aria-label="${esc(v.symbol)}，${esc(group.name)}，最低音${esc(v.bass)}，六弦到一弦品位${fretCode(v.frets)}"><strong class="inversion-symbol">${esc(v.symbol)}</strong>${miniSVG(v.frets,true)}<span class="fret-code">${fretCode(v.frets)}</span><span class="inversion-bass">最低音 ${esc(v.bass||group.bassName)} · ${esc(group.bassDegree)} 音</span><span class="inversion-sequence">低 → 高：${esc(noteSequence)}</span><small>${esc(v.label)}<br>${v.omitted.length?'省略 '+v.omitted.join('、')+' 音':'完整构成音'}</small></button>`;
+}
+function renderInversions(){
+  $('inversion-current').textContent=`${chord.symbol} · ${inversionGroups.length} 种低音位置`;
+  $('inversion-groups').innerHTML=inversionGroups.map((group,i)=>{
+    const expanded=inversionExpanded.has(group.id),shown=expanded?group.voicings:group.voicings.slice(0,2);
+    return `<article class="inversion-group"><div class="inversion-group-heading"><h3>${esc(group.name)}</h3><span>${esc(group.bassDegree)} 音低音 · <b>${esc(group.bassName)}</b></span></div><p>${esc(group.description)}</p><div class="inversion-shapes">${shown.length?shown.map((v,j)=>inversionCard(group,i,v,j)).join(''):'<div class="inversion-empty">0–15 品内暂无符合条件的完整练习按法。</div>'}</div>${group.voicings.length>2?`<button class="text-button inversion-more" type="button" data-inversion-more="${esc(group.id)}" aria-expanded="${expanded}">${expanded?'收起更多把位':'更多把位（'+(group.voicings.length-2)+'）'}</button>`:''}</article>`;
+  }).join('');
+  const selected=state.selected?.source==='inversion'?state.selected:null;
+  $('inversion-selection').textContent=selected?`${selected.symbol} · ${selected.inversion} · 最低音 ${selected.bass} · ${fretCode(selected.frets)}`:'先选一个按法，或点“下一转位”从原位开始。';
+  const hasVoicings=inversionGroups.some(g=>g.voicings.length);
+  $('inversion-previous').disabled=!hasVoicings;$('inversion-next').disabled=!hasVoicings;
+  $('inversion-play').disabled=!hasVoicings;$('inversion-show-board').disabled=!hasVoicings;
+  const extended=chord.degrees.some(d=>Number(d.replace(/[^0-9]/g,''))>7);
+  $('inversion-note').textContent=extended?'延伸和弦按三／七和弦骨架标记转位；9、11、13 等色彩音的省略情况写在每张按法下。若某种低音无法在当前范围内形成满足条件的按法，会保留说明。':'练习顺序：先弹最低音，再分解各音，最后齐奏；保持和弦性质，依次比较各个转位。换到另一把位，不一定改变转位。';
+  renderInversionDock();
+}
+function renderInversionDock(){
+  const dock=$('inversion-dock'),selected=state.selected?.source==='inversion'?state.selected:null;
+  dock.hidden=!selected;if(!selected)return;
+  dock.innerHTML=`<div><span class="field-caption">顺序练转位 / 最低音决定转位</span><strong>${esc(selected.symbol)} <span>${esc(selected.inversion)} · 最低音 ${esc(selected.bass)}</span></strong></div><div class="dock-actions"><button type="button" class="button" data-inversion-action="previous">← 上一转位</button><button type="button" class="button button-dark" data-inversion-action="next">下一转位 →</button><button type="button" class="button" data-inversion-action="play">▶ 试听</button><button type="button" class="text-button" data-inversion-action="list">回转位对照 ↓</button></div>`;
+}
+function selectInversion(groupIndex,voiceIndex=0,scroll=false){
+  const group=inversionGroups[groupIndex],v=group?.voicings[voiceIndex];if(!v)return false;
+  if(state.practiceActive){stopMetronome();state.practiceActive=false;}
+  state.focus='all';state.range='practice';state.selected={...v,source:'inversion',groupId:group.id,index:voiceIndex,inversion:group.name,bass:v.bass||group.bassName};
+  renderControls();renderOverview();renderBoards();renderVoicings();renderCaged();renderInversions();renderPractice();
+  if(scroll)$('fretboard').scrollIntoView({behavior:'smooth'});return true;
+}
+function stepInversion(direction=1){
+  const groups=inversionGroups.map((g,i)=>g.voicings.length?i:null).filter(i=>i!==null);if(!groups.length)return;
+  const current=state.selected?.source==='inversion'?groups.findIndex(i=>inversionGroups[i].id===state.selected.groupId):-1;
+  const next=current<0?(direction>0?0:groups.length-1):(current+direction+groups.length)%groups.length;
+  selectInversion(groups[next]);
+}
+function ensureInversionSelected(){if(state.selected?.source!=='inversion')stepInversion(1);}
+function renderCaged(){
+  $('caged-current').textContent=ROOTS[state.root].label+' 大三和弦';
+  $('caged-grid').innerHTML=caged.map((v,i)=>`<button class="voicing-card" type="button" data-caged="${i}" aria-pressed="${state.selected?.source==='caged'&&state.selected.index===i}"><span class="shape-letter">${v.shape}</span><strong>${ROOTS[state.root].label} 和弦 · ${v.shape} 型</strong>${miniSVG(v.frets)}<span class="fret-code">${fretCode(v.frets)}</span><small>${v.minFret}–${v.maxFret} 品区域</small></button>`).join('');
+}
+function renderTable(){
+  const filter=$('catalog-family').value;
+  $('chord-table').innerHTML=CHORDS.filter(c=>filter==='all'||c.family===filter).map(c=>{
+    const item=getChord(state.root,c.id);
+    return `<tr class="${c.id===state.type?'active-row':''}" data-chord="${c.id}" tabindex="0" aria-label="查看${item.symbol} ${item.name}"><td>${item.symbol}</td><td>${item.name}</td><td>${item.degrees.join(' · ')}</td><td>${item.tones.map(t=>t.name).join(' · ')}</td><td>${esc(item.tip)}</td></tr>`;
+  }).join('');
+}
+function render(){chord=getChord(state.root,state.type);voicings=getVoicings(state.root,state.type);caged=getCaged(state.root);inversionGroups=getInversionGroups(state.root,state.type);renderControls();renderOverview();renderBoards();renderVoicings();renderInversions();renderCaged();renderTable();renderPractice();}
+
+async function ensureAudio(){
+  if(!audio){const Context=window.AudioContext||window.webkitAudioContext;if(!Context)throw new Error('当前浏览器不支持合成音，请在吉他上核对声音。');audio=new Context();}
+  if(audio.state!=='running')await audio.resume();return audio;
+}
+function stopNotes(){playing.forEach(o=>{try{o.stop();}catch{}});playing=[];}
+function sound(midi,at,duration=.9,level=.1,kind='triangle'){
+  const o=audio.createOscillator(),g=audio.createGain();o.type=kind;o.frequency.value=440*2**((midi-69)/12);o.connect(g);g.connect(audio.destination);g.gain.setValueAtTime(0,at);g.gain.linearRampToValueAtTime(level,at+.012);g.gain.exponentialRampToValueAtTime(.0001,at+duration);o.start(at);o.stop(at+duration+.025);o.onended=()=>{o.disconnect();g.disconnect();playing=playing.filter(v=>v!==o);};playing.push(o);
+}
+async function playNote(midi){try{await ensureAudio();stopNotes();sound(midi,audio.currentTime+.01,.9,.16);}catch(e){toast(e.message);}}
+async function playChord(arp=false){
+  try{await ensureAudio();stopNotes();const notes=state.selected?state.selected.frets.flatMap((f,s)=>f<0?[]:[TUNING[s]+f]).sort((a,b)=>a-b):chord.tones.map(t=>48+state.root+t.interval);notes.forEach((m,i)=>sound(m,audio.currentTime+.02+(arp?i*.27:0),arp?1.3:1.8,.3/notes.length));}catch(e){toast(e.message);}
+}
+
+function renderPractice(){
+  const p=PRACTICES[state.practice];
+  $('practice-tabs').innerHTML=PRACTICES.map((p,i)=>`<button type="button" data-practice="${i}" aria-pressed="${i===state.practice}">${['01 / 性质对照','02 / CAGED 地图','03 / 和弦连接','04 / 延伸音比较'][i]}</button>`).join('');
+  $('practice-name').textContent=p.title;$('practice-subtitle').textContent=p.subtitle;$('practice-steps').innerHTML=p.steps.map(s=>`<li>${esc(s)}</li>`).join('');$('practice-goal').textContent='练习目标：'+p.goal;
+  $('practice-targets').innerHTML=p.targets.map((t,i)=>`<button type="button" data-target="${i}" aria-pressed="${state.practiceActive&&i===state.target}">${esc(t.label||getChord(t.root,t.type).symbol)}</button>`).join('');
+  renderPracticeDock();
+}
+function renderPracticeDock(){
+  const dock=$('practice-dock');dock.hidden=!state.practiceActive;if(!state.practiceActive)return;
+  const p=PRACTICES[state.practice];
+  dock.innerHTML=`<div><span class="field-caption">跟练 / ${esc(p.title)}</span><div class="dock-targets">${p.targets.map((t,i)=>`<button type="button" data-dock-target="${i}" aria-pressed="${i===state.target}">${esc(t.shape?t.shape+' 型':getChord(t.root,t.type).symbol)}</button>`).join('')}</div></div><div class="dock-actions"><button class="button" type="button" data-dock-action="next">下一个 →</button><button class="button button-dark" type="button" data-dock-action="metro">${started?'停止节拍':'开启节拍'} · ${$('bpm').value} BPM</button><label class="check-label"><input type="checkbox" data-dock-auto ${$('auto-next').checked?'checked':''}>四拍换和弦</label><button type="button" class="text-button" data-dock-action="close">结束跟练</button></div>`;
+}
+function selectTarget(index,quiet=false){
+  state.practiceActive=true;
+  const p=PRACTICES[state.practice];state.target=(index+p.targets.length)%p.targets.length;const t=p.targets[state.target];
+  let selected=null;
+  if(t.shape){const i=getCaged(t.root).findIndex(v=>v.shape===t.shape);if(i>=0)selected={...getCaged(t.root)[i],source:'caged',index:i,omitted:[]};}
+  else if(t.frets){const targetChord=getChord(t.root,t.type),present=new Set(t.frets.flatMap((f,s)=>f<0?[]:[(TUNING[s]+f)%12]));selected={frets:t.frets,source:'practice',omitted:targetChord.tones.filter(tone=>!present.has(tone.pc)).map(tone=>tone.degree)};}
+  else {const choices=getVoicings(t.root,t.type);if(choices.length)selected={...choices[0],source:'voicing',index:0};}
+  state.focus=state.practice===2?'guide':'all';state.range='practice';setSelection(t.root,t.type,selected,true);renderPractice();
+  if(!quiet)toast('指板已切换至 '+(t.label||getChord(t.root,t.type).symbol));
+}
+function stopMetronome(){clearInterval(metroTimer);metroTimer=null;started=false;beat=0;$('metronome-button').textContent='开启节拍器';$('metronome-button').setAttribute('aria-pressed','false');[...$('beat-dots').children].forEach(d=>d.classList.remove('on'));renderPracticeDock();}
+function tick(){
+  if(!started)return;
+  if(beat>0&&beat%4===0&&$('auto-next').checked)selectTarget(state.target+1,true);
+  [...$('beat-dots').children].forEach((d,i)=>d.classList.toggle('on',i===beat%4));
+  sound(beat%4===0?88:81,audio.currentTime+.008,.055,beat%4===0?.16:.1,'sine');beat++;
+}
+async function startMetronome(){
+  if(!state.practiceActive)selectTarget(state.target,true);
+  try{await ensureAudio();const bpm=Math.max(40,Math.min(180,Number($('bpm').value)||60));$('bpm').value=bpm;started=true;beat=0;$('metronome-button').textContent='停止节拍器';$('metronome-button').setAttribute('aria-pressed','true');renderPracticeDock();tick();metroTimer=setInterval(tick,60000/bpm);}catch(e){toast(e.message);}
+}
+
+$('root-picker').addEventListener('click',e=>{const b=e.target.closest('[data-root]');if(b)setSelection(Number(b.dataset.root),state.type);});
+$('family-picker').addEventListener('click',e=>{const b=e.target.closest('[data-family]');if(!b)return;stopMetronome();state.practiceActive=false;state.family=b.dataset.family;if(state.family!=='all'&&chord.family!==state.family)state.type=CHORDS.find(c=>c.family===state.family).id;state.selected=null;render();renderPractice();remember();});
+$('chord-type').addEventListener('change',e=>setSelection(state.root,e.target.value));
+$('label-mode').addEventListener('click',e=>{const b=e.target.closest('[data-label]');if(b){state.label=b.dataset.label;renderControls();renderBoards();remember();}});
+$('focus-picker').addEventListener('click',e=>{const b=e.target.closest('[data-focus]');if(b){state.focus=b.dataset.focus;renderControls();renderBoards();}});
+$('board-range').addEventListener('change',e=>{state.range=e.target.value;renderBoards();remember();});
+$('show-all').addEventListener('change',e=>{state.showAll=e.target.checked;renderBoards();});
+$('board-container').addEventListener('click',e=>{const p=e.target.closest('[data-midi]');if(p)playNote(Number(p.dataset.midi));});
+$('board-container').addEventListener('keydown',e=>{const p=e.target.closest('[data-midi]');if(p&&(e.key==='Enter'||e.key===' ')){e.preventDefault();playNote(Number(p.dataset.midi));}});
+$('voicing-grid').addEventListener('click',e=>{const b=e.target.closest('[data-voicing]');if(!b)return;const i=Number(b.dataset.voicing);state.selected={...voicings[i],source:'voicing',index:i};state.focus='all';state.range='practice';renderControls();renderOverview();renderBoards();renderVoicings();renderInversions();renderCaged();$('fretboard').scrollIntoView({behavior:'smooth'});});
+$('caged-grid').addEventListener('click',e=>{const b=e.target.closest('[data-caged]');if(!b)return;const i=Number(b.dataset.caged),v=getCaged(state.root)[i];state.focus='all';state.range='practice';setSelection(state.root,'major',{...v,source:'caged',index:i,omitted:[]});$('fretboard').scrollIntoView({behavior:'smooth'});});
+$('clear-voicing').addEventListener('click',()=>{state.selected=null;renderOverview();renderBoards();renderVoicings();renderInversions();renderCaged();});
+$('inversion-groups').addEventListener('click',e=>{const more=e.target.closest('[data-inversion-more]');if(more){const id=more.dataset.inversionMore;inversionExpanded.has(id)?inversionExpanded.delete(id):inversionExpanded.add(id);renderInversions();return;}const b=e.target.closest('[data-inversion-group]');if(b){selectInversion(Number(b.dataset.inversionGroup),Number(b.dataset.inversionVoice),true);playChord(false);}});
+$('inversion-previous').addEventListener('click',()=>stepInversion(-1));$('inversion-next').addEventListener('click',()=>stepInversion(1));
+$('inversion-play').addEventListener('click',()=>{ensureInversionSelected();playChord(false);});
+$('inversion-show-board').addEventListener('click',()=>{ensureInversionSelected();$('fretboard').scrollIntoView({behavior:'smooth'});});
+$('inversion-dock').addEventListener('click',e=>{const b=e.target.closest('[data-inversion-action]');if(!b)return;const action=b.dataset.inversionAction;if(action==='previous')stepInversion(-1);if(action==='next')stepInversion(1);if(action==='play')playChord(false);if(action==='list')$('inversions').scrollIntoView({behavior:'smooth'});});
+$('play-chord').addEventListener('click',()=>playChord(false));$('play-arp').addEventListener('click',()=>playChord(true));
+$('catalog-family').addEventListener('change',renderTable);
+function activateRow(e){const row=e.target.closest('[data-chord]');if(row){state.focus='all';setSelection(state.root,row.dataset.chord);$('fretboard').scrollIntoView({behavior:'smooth'});}}
+$('chord-table').addEventListener('click',activateRow);$('chord-table').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activateRow(e);}});
+$('practice-tabs').addEventListener('click',e=>{const b=e.target.closest('[data-practice]');if(!b)return;stopMetronome();state.practice=Number(b.dataset.practice);state.target=0;renderPractice();selectTarget(0);});
+$('practice-targets').addEventListener('click',e=>{const b=e.target.closest('[data-target]');if(b)selectTarget(Number(b.dataset.target));});
+$('previous-target').addEventListener('click',()=>selectTarget(state.target-1));$('next-target').addEventListener('click',()=>selectTarget(state.target+1));
+$('go-practice-board').addEventListener('click',()=>{selectTarget(state.target,true);$('fretboard').scrollIntoView({behavior:'smooth'});});
+$('practice-dock').addEventListener('click',e=>{const target=e.target.closest('[data-dock-target]');if(target){selectTarget(Number(target.dataset.dockTarget),true);return;}const b=e.target.closest('[data-dock-action]');if(!b)return;if(b.dataset.dockAction==='next')selectTarget(state.target+1,true);if(b.dataset.dockAction==='metro')started?stopMetronome():startMetronome();if(b.dataset.dockAction==='close'){stopMetronome();state.practiceActive=false;renderPractice();}});
+$('practice-dock').addEventListener('change',e=>{if(e.target.matches('[data-dock-auto]'))$('auto-next').checked=e.target.checked;});
+$('auto-next').addEventListener('change',renderPracticeDock);
+$('metronome-button').addEventListener('click',()=>started?stopMetronome():startMetronome());$('bpm').addEventListener('change',()=>{if(started){stopMetronome();startMetronome();}});
+$('print').addEventListener('click',()=>window.print());
+document.addEventListener('visibilitychange',()=>{if(document.hidden){stopMetronome();stopNotes();}});
+$('correction-grid').innerHTML=CORRECTIONS.map(c=>`<article><h3>${esc(c.title)}</h3><p>${esc(c.text)}</p></article>`).join('');
+$('source-list').innerHTML=SOURCE_NOTES.map(s=>`<p><a href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.title)} ↗</a><br>${esc(s.note)}</p>`).join('');
+render();renderPractice();
+
+</script>
+</body>
+</html>

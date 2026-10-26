@@ -1,0 +1,15 @@
+{
+  "name": "chord-map",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A Chinese guitar chord and inversion practice map for frets 0–15.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build-offline.mjs",
+    "test": "node --test music.test.mjs inversions.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
